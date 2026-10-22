@@ -1,0 +1,16 @@
+column,definition,format / notes
+order_id,Unique order-line identifier,Text
+order_date,Date order was placed,YYYY-MM-DD
+customer_id,Synthetic customer identifier,Text; 3 rows intentionally missing
+region,Sales region,North/South/East/West/Central
+segment,Customer segment,Consumer/Corporate/Small Business
+category,Product category,Technology/Furniture/Office Supplies
+product,Product name,Synthetic product
+quantity,Units purchased,Integer; two zero values intentionally inserted for QA practice
+unit_price,Price per unit before discount,Decimal
+discount_pct,Discount as decimal fraction,0 to 0.30
+sales,Net revenue after discount,unit_price × quantity × (1 - discount_pct)
+cost,Estimated product cost,Synthetic cost estimate
+profit,Net sales less estimated cost,sales - cost
+ship_mode,Shipping service level,Categorical
+ship_days,Days to deliver,Integer
